@@ -1,0 +1,4 @@
+###############################################################################
+#ZONE	INTERFACE	BROADCAST	OPTIONS
+net     eth1            detect          tcpflags,routefilter,nosmurfs,logmartians
+loc     eth0            detect          dhcp,tcpflags,nosmurfs

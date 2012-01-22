@@ -1,0 +1,12 @@
+### FW to ......
+fw 	net		ACCEPT
+fw 	loc		ACCEPT
+
+### loc
+loc 	all 		ACCEPT
+
+### all, net
+net 	all		ACCEPT
+all	all		REJECT info
+
+#LAST LINE -- ADD YOUR ENTRIES ABOVE THIS LINE -- DO NOT REMOVE
