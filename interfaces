@@ -1,0 +1,19 @@
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+auto eth0 eth1
+
+######## WAN
+
+iface eth1 inet static
+	address xxx.xxx.xxx.xxx
+	netmask 255.255.255.xxx
+	gateway xxx.xxx.xxx.xxx
+
+####### LAN
+
+iface eth0 inet static
+	address 10.20.40.1
+	netmask 255.255.254.0
+	network 10.20.40.0/23
